@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "HomeCell.h"
+#import "NextViewController.h"
 
 static NSString *kHomeCellID = @"kHomeCellID";
 
@@ -38,6 +39,14 @@ static NSString *kHomeCellID = @"kHomeCellID";
     
     [self setupUI];
 }
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = NO;
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.tabBarController.tabBar.hidden = YES;
+}
 
 
 #pragma mark:- 设置UI
@@ -64,6 +73,11 @@ static NSString *kHomeCellID = @"kHomeCellID";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return 120;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NextViewController *nextVc = [[NextViewController alloc]init];
+    [self.navigationController pushViewController:nextVc animated:YES];
 }
 @end
 

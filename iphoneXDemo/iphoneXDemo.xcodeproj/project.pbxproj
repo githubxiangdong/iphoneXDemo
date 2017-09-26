@@ -18,6 +18,7 @@
 		298A48A21F75119200C431CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298A48A11F75119200C431CD /* Assets.xcassets */; };
 		298A48A51F75119200C431CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298A48A31F75119200C431CD /* LaunchScreen.storyboard */; };
 		298A48A81F75119200C431CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A48A71F75119200C431CD /* main.m */; };
+		29904DE91F79F4FA002AF6BE /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29904DE81F79F4FA002AF6BE /* NextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		298A48A41F75119200C431CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		298A48A61F75119200C431CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		298A48A71F75119200C431CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29904DE71F79F4FA002AF6BE /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		29904DE81F79F4FA002AF6BE /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 			children = (
 				296045531F78950700E8C8CE /* HomeViewController.h */,
 				296045541F78950700E8C8CE /* HomeViewController.m */,
+				29904DE71F79F4FA002AF6BE /* NextViewController.h */,
+				29904DE81F79F4FA002AF6BE /* NextViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 		298A48AE1F7519AC00C431CD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				29904DE61F79F3F0002AF6BE /* Tools */,
 				2960455E1F789EDB00E8C8CE /* HeaderFile */,
 				298A48B01F7519AC00C431CD /* Main */,
 				298A48AF1F7519AC00C431CD /* Home */,
@@ -208,6 +214,13 @@
 				2960454D1F788ED900E8C8CE /* Controller */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		29904DE61F79F3F0002AF6BE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +300,7 @@
 				296045581F78952600E8C8CE /* MineViewController.m in Sources */,
 				296045521F78921000E8C8CE /* CustomTabBarController.m in Sources */,
 				2960455D1F789B4100E8C8CE /* CustomNavigationController.m in Sources */,
+				29904DE91F79F4FA002AF6BE /* NextViewController.m in Sources */,
 				296045641F78E19300E8C8CE /* HomeCell.m in Sources */,
 				296045551F78950700E8C8CE /* HomeViewController.m in Sources */,
 			);
